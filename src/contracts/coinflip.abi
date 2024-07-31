@@ -1,0 +1,127 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "config",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "max_bet",
+                    "type": "asset"
+                },
+                {
+                    "name": "house_edge_pct",
+                    "type": "uint16"
+                }
+            ]
+        },
+        {
+            "name": "game_result",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "player",
+                    "type": "name"
+                },
+                {
+                    "name": "bet",
+                    "type": "asset"
+                },
+                {
+                    "name": "is_heads",
+                    "type": "bool"
+                },
+                {
+                    "name": "won",
+                    "type": "bool"
+                },
+                {
+                    "name": "payout",
+                    "type": "asset"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "time_point_sec"
+                }
+            ]
+        },
+        {
+            "name": "sethouseedge",
+            "base": "",
+            "fields": [
+                {
+                    "name": "new_house_edge_pct",
+                    "type": "uint16"
+                }
+            ]
+        },
+        {
+            "name": "setmaxbet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "new_max_bet",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "sethouseedge",
+            "type": "sethouseedge",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setmaxbet",
+            "type": "setmaxbet",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "config",
+            "type": "config",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "results",
+            "type": "game_result",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}

@@ -1,0 +1,76 @@
+.announcement-bar {
+  background-color: #28262c;
+  border-bottom: 1px grey solid;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+
+.balance-display {
+  border: 1px solid grey;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px;
+  color: white;
+  background-color: transparent;
+  pointer-events: none;
+  margin-right: 10px;
+}
+
+
+.connectButton {
+  position: fixed;
+  top: 70px;
+  right: 100px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.centeredContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.authErrorMessage {
+  margin-top: 8px;
+}
+
+.resultsTable {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 40vh; /* Adjust this value as needed */
+  overflow-y: auto;
+  width: 100%;
+}
+
+.coin-flip-gif {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+}
+
+.coin-flip-image {
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+
+
+
+
